@@ -30,13 +30,16 @@ public class MainActivity2 extends AppCompatActivity {
 
                 Intent i = new Intent(MainActivity2.this, MainActivity.class);
                 String atadandoSzoveg = nev.getText().toString();
-                i.putExtra("Nev:", atadandoSzoveg);
+                i.putExtra("Nev", atadandoSzoveg);
 
                 String atadandoSzoveg2 = nev.getText().toString();
-                i.putExtra("Szül.datum:", atadandoSzoveg2);
+                String[] atadandoSzovegresz= atadandoSzoveg2.split(".");
+                int ev = Integer.parseInt(atadandoSzovegresz[0]);
+                int kor = 2021-ev;
+                i.putExtra("Kor", kor);
 
                 String atadandoSzoveg3 = nev.getText().toString();
-                i.putExtra("Szig.száma::", atadandoSzoveg3);
+                i.putExtra("Szig", atadandoSzoveg3);
 
                 startActivity(i);
             }

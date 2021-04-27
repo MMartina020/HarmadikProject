@@ -33,9 +33,9 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/nev"
-        android:hint="Adja meg a születési dátumát"
+        android:hint="Születési dátum (ev.hó.nap)"
         android:layout_marginTop="16dp"
-        android:inputType="date"
+        android:inputType="text"
         />
 
 
