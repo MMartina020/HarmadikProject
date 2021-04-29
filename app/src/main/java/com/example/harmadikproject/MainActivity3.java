@@ -11,7 +11,6 @@ import android.widget.TextView;
 
 public class MainActivity3 extends AppCompatActivity {
 
-    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,16 +18,16 @@ public class MainActivity3 extends AppCompatActivity {
 
         TextView tv = findViewById(R.id.kiir);
         TextView tv2 = findViewById(R.id.kiir2);
-        Button gomb = findViewById(R.id.Gomb);
+        Button gombk = findViewById(R.id.home);
 
         Bundle extras = getIntent().getExtras();
 
         if (extras !=null) {
-            tv.setText("Köszönjük a regisztrációját"+extras.getString("Nev"));
-            tv2.setText("rögzitésre kerult az életkora "+extras.getString("Kor")+"év És személyi száma: "+extras.getString("Szig"));
+            tv.setText("Köszönjük a regisztrációját "+extras.getString("Nev"));
+            tv2.setText("rögzitésre kerult az életkora "+extras.getInt("Kor")+"év És személyi száma: "+extras.getString("Szig"));
         }
 
-        gomb.setOnClickListener(new View.OnClickListener() {
+        gombk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent resultActivity = new Intent(MainActivity3.this, MainActivity.class);

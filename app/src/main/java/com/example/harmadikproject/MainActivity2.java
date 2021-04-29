@@ -3,9 +3,6 @@ package com.example.harmadikproject;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
@@ -16,34 +13,30 @@ public class MainActivity2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main2);
 
-        EditText nev = findViewById(R.id.nev);
-        EditText szul= findViewById(R.id.szul);
-        EditText szig= findViewById(R.id.szig);
+        EditText nevk = findViewById(R.id.nev);
+        EditText szulk= findViewById(R.id.szul);
+        EditText szigk= findViewById(R.id.szig);
 
-        Button tovabbitas = findViewById(R.id.tovabbitas);
+        Button Tovabbitas = findViewById(R.id.gomb2);
 
-        tovabbitas.setOnClickListener(new View.OnClickListener() {
+        Tovabbitas.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
 
-                Intent i = new Intent(MainActivity2.this, MainActivity.class);
-                String atadandoSzoveg = nev.getText().toString();
-                i.putExtra("Nev", atadandoSzoveg);
+                Intent k = new Intent(MainActivity2.this,
+                        MainActivity3.class);
+                k.putExtra("Nev", nevk.getText().toString());
 
-                String atadandoSzoveg2 = nev.getText().toString();
-                String[] atadandoSzovegresz= atadandoSzoveg2.split(".");
-                int ev = Integer.parseInt(atadandoSzovegresz[0]);
-                int kor = 2021-ev;
-                i.putExtra("Kor", kor);
+                int atad = 2021 - Integer.parseInt(szulk.getText().toString().substring(0, 4));
+                k.putExtra("Kor", atad);
 
-                String atadandoSzoveg3 = nev.getText().toString();
-                i.putExtra("Szig", atadandoSzoveg3);
-
-                startActivity(i);
-            }
-        });
+                k.putExtra("Szig", szigk.getText().toString());
+                startActivity(k);
+            }}
+        );
     }
 }
 

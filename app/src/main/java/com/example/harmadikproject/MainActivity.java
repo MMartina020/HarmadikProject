@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button Gomb = findViewById(R.id.Gomb);
-        ImageView Kep = findViewById(R.id.Kep);
+
 
         Gomb.setOnClickListener(new View.OnClickListener() {
             @Override

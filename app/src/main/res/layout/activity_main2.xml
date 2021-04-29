@@ -24,18 +24,19 @@
         android:layout_below="@id/cim"
         android:layout_marginTop="16dp"
         android:hint="Adja meg a nevét"
-        android:inputType="text"
+
         android:layout_centerHorizontal="true"/>
 
     <EditText
         android:id="@+id/szul"
+        android:inputType="date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/nev"
         android:hint="Születési dátum (ev.hó.nap)"
         android:layout_marginTop="16dp"
-        android:inputType="text"
+
         />
 
 
@@ -48,12 +49,12 @@
         android:layout_below="@+id/szul"
         android:hint="Adja meg a szig. számát"
         android:layout_marginTop="16dp"
-        android:inputType="text"
+
         />
 
 
     <Button
-        android:id="@+id/tovabbitas"
+        android:id="@+id/gomb2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/szig"
