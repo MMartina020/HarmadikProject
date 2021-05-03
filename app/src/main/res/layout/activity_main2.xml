@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/cim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:text="Adatok bekerése"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        />
+
+
+    <EditText
+        android:id="@+id/nev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cim"
+        android:layout_marginTop="16dp"
+        android:hint="Adja meg a nevét"
+
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/szul"
+        android:inputType="date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/nev"
+        android:hint="születési dátum  (ev.ho.nap)"
+        android:layout_marginTop="16dp"
+
+        />
+
+
+
+    <EditText
+        android:id="@+id/szig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/szul"
+        android:hint="Adja meg a szig. számát"
+        android:layout_marginTop="16dp"
+
+        />
+
+
+    <Button
+        android:id="@+id/gomb2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/szig"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:text="Továbbítás" />
+
+
+
+
+</RelativeLayout>
