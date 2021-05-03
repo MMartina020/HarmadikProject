@@ -22,7 +22,7 @@ public class Megrendeles extends AppCompatActivity {
 
         if (extras !=null) {
             szovegkiir.setText("Köszönjük a megrendelését "+extras.getString("nev")+
-                    " A ffizetendő végösszeg: : "+extras.getInt("osszeg"));
+                    " A fizetendő végösszeg: : "+extras.getInt("osszeg"));
         }
 
         home.setOnClickListener(new View.OnClickListener() {
