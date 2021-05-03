@@ -13,7 +13,7 @@ public class Alkohol extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.alkohol);
+        setContentView(R.layout.activity_alkohol);
 
         Button Rendelogomb = findViewById(R.id.Rendel);
         EditText beer = findViewById(R.id.Beerdb);
