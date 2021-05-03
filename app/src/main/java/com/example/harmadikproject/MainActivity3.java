@@ -24,7 +24,7 @@ public class MainActivity3 extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
 
         if (extras !=null) {
-            tv.setText("Köszönjük a megrendelését "+extras.getString("Nev"));
+            tv.setText(""+extras.getString("Nev"));
             tv2.setText("Rögzitésre kerult az életkora "+extras.getInt("Kor")+"év És személyi száma: "+extras.getString("Szig"));
             tv3.setText("Az ön álltal választott termék: "+extras.getString("Alkohol_neve")+" rendelt darab: "+extras.getString("Darabszam"));
 
@@ -33,8 +33,8 @@ public class MainActivity3 extends AppCompatActivity {
         gombk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent resultActivity = new Intent(MainActivity3.this, MainActivity.class);
-                startActivity(resultActivity);
+                Intent m = new Intent(MainActivity3.this, MainActivity.class);
+                startActivity(m);
             }
         });
     }

@@ -6,6 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity3">
 
+    <EditText
+        android:id="@+id/thanks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Köszönjük megrendelését!"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/beerthank"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/beerthank"
+        android:src="@drawable/beer"
+        />
+
+
+
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -35,7 +53,7 @@
         android:layout_below="@+id/kiir3"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
-        android:text="Back Home"
+        android:text="Új megrendelés leadása"
         android:id="@+id/home"
         ></Button>
 
