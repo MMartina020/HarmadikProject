@@ -18,13 +18,16 @@ public class MainActivity3 extends AppCompatActivity {
 
         TextView tv = findViewById(R.id.kiir);
         TextView tv2 = findViewById(R.id.kiir2);
+        TextView tv3 =findViewById(R.id.kiir3);
         Button gombk = findViewById(R.id.home);
 
         Bundle extras = getIntent().getExtras();
 
         if (extras !=null) {
-            tv.setText("Köszönjük a regisztrációját "+extras.getString("Nev"));
-            tv2.setText("rögzitésre kerult az életkora "+extras.getInt("Kor")+"év És személyi száma: "+extras.getString("Szig"));
+            tv.setText("Köszönjük a megrendelését "+extras.getString("Nev"));
+            tv2.setText("Rögzitésre kerult az életkora "+extras.getInt("Kor")+"év És személyi száma: "+extras.getString("Szig"));
+            tv3.setText("Az ön álltal választott termék: "+extras.getString("Alkohol_neve")+" rendelt darab: "+extras.getString("Darabszam"));
+
         }
 
         gombk.setOnClickListener(new View.OnClickListener() {

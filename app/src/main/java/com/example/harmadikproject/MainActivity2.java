@@ -8,7 +8,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+
+
 public class MainActivity2 extends AppCompatActivity {
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +22,8 @@ public class MainActivity2 extends AppCompatActivity {
         EditText nevk = findViewById(R.id.nev);
         EditText szulk= findViewById(R.id.szul);
         EditText szigk= findViewById(R.id.szig);
-
+        EditText alkoholn= findViewById(R.id.alkohol);
+        EditText darabsz= findViewById(R.id.darab);
         Button Tovabbitas = findViewById(R.id.gomb2);
 
         Tovabbitas.setOnClickListener(new View.OnClickListener() {
@@ -35,8 +40,19 @@ public class MainActivity2 extends AppCompatActivity {
 
                 k.putExtra("Szig", szigk.getText().toString());
                 startActivity(k);
+
+                k.putExtra("Alkohol_neve", alkoholn.getText().toString());
+                startActivity(k);
+
+
+                k.putExtra("Darabszam", darabsz.getText().toString());
+                startActivity(k);
+
+                
             }}
         );
     }
+
 }
+
 

@@ -4,23 +4,51 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#404449"
     tools:context=".MainActivity">
 
 
+    <TextView
+        android:id="@+id/regisztracio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Regisztráció covid oltásra"
+        android:textSize="28dp"
+        android:layout_marginTop="20dp"
+
+        />
+
     <Button
-    android:id="@+id/Gomb"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_below="@+id/Kep"
-    android:layout_marginTop="150dp"
-    android:text="Regisztráció"/>
+        android:id="@+id/Gomb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Kep"
+        android:layout_marginTop="151dp"
+        android:text="Na gyerünk!" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Kep"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:textSize="28dp"
+        android:text="Inkább rendelek egy kis piát!"
+
+        />
+
 
     <ImageView
+        android:layout_below="@+id/regisztracio"
         android:id="@+id/Kep"
         android:layout_width="400dp"
         android:layout_height="200dp"
         android:layout_marginTop="24dp"
-        android:src="@drawable/vakcina" />
+        android:src="@drawable/pia"
+
+        />
 
 </RelativeLayout>
     
