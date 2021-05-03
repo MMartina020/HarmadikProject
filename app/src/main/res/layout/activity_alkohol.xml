@@ -17,7 +17,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="MennyisĂ©gek:"
+        android:text="Mennyiségek:"
         android:layout_below="@+id/Logo"
         android:layout_marginLeft="200dp"
         android:layout_marginTop="20dp"
@@ -79,7 +79,7 @@
         android:layout_below="@+id/Palinka"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:hint="Irja be a nevĂ©t"
+        android:hint="Irja be a nevét"
         />
     <Button
         android:id="@+id/Rendel"
